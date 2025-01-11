@@ -13,6 +13,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/api", router);
 
+// use middleware for rest request
+
 app.listen(process.env.APP_PORT || 3000, () => {
     console.log(`Server is running on port ${process.env.APP_PORT || 3000}`);
 });
